@@ -8,18 +8,18 @@
   <head lang="en-us">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <title>Contact information - BatMass</title>
+    <title>Overlay peptide IDs on 2D map - BatMass</title>
     <meta name="generator" content="Hugo 0.16" />
 
     
     <meta name="description" content="Mass spectrometry data visualization">
     
-    <link rel="canonical" href="http://batmass.github.io/contacts/">
+    <link rel="canonical" href="http://batmass.github.io/tutorial/overlay-peptide-ids-on-map2d/">
     
     <meta name="author" content="Dmitry Avtonomov">
     
 
-    <meta property="og:url" content="http://batmass.github.io/contacts/">
+    <meta property="og:url" content="http://batmass.github.io/tutorial/overlay-peptide-ids-on-map2d/">
     <meta property="og:title" content="BatMass">
     <meta property="og:image" content="http://batmass.github.io/images/bm-icon-512.png">
     <meta name="apple-mobile-web-app-title" content="BatMass">
@@ -107,7 +107,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Contact information
+        Overlay peptide IDs on 2D map
       </div>
     </div>
 
@@ -245,14 +245,11 @@
 
 
 
-<a class="current" title="Contact info" href="http://batmass.github.io/contacts/">
+<a  title="Contact info" href="http://batmass.github.io/contacts/">
 	
 	Contact info
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
   
 </li>
@@ -355,11 +352,14 @@
 
 
 
-<a  title="Overlay peptide IDs on 2D map" href="http://batmass.github.io/tutorial/overlay-peptide-ids-on-map2d/">
+<a class="current" title="Overlay peptide IDs on 2D map" href="http://batmass.github.io/tutorial/overlay-peptide-ids-on-map2d/">
 	
 	Overlay peptide IDs on 2D map
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
       
     </ul>
@@ -417,29 +417,38 @@
 
 			
 
-			<h1>Contact information </h1>
+			<h1>Overlay peptide IDs on 2D map </h1>
 
 			
 
-<p>Please use the <a href="https://github.com/chhh/batmass/issues">bug tracker</a> to request additional functionality or report bugs.</p>
+<p>For this tutorial you will need a <em>.pep.xml</em> file and a corresponding <em>mzML/mzXML</em> file. The
+<em>.pep.xml</em> file <strong>MUST</strong> contain retention time information (<code>retention_time_sec</code> attribute in
+<code>spectrum_query</code> tags). You will likely have that if you used <em>mzML/mzXML</em> or native file formats
+to perform the search (instead of something like an <em>mgf</em> file).</p>
 
-<h2 id="referencing-the-work">Referencing the work</h2>
+<h2 id="importing-pep-xml-file">Importing <em>.pep.xml</em> file</h2>
 
-<p>If you use BatMass for your research or work, please cite the following paper:<br />
-<strong><a href="https://dx.doi.org/10.1021/acs.jproteome.6b00021">Avtonomov D.M. et al:
-J. Proteome Res. June 16, 2016.
-DOI: 10.1021/acs.jproteome.6b00021.</a></strong></p>
+<p>In a <em>Proteomics</em> project right-click <em>Identifications</em> node and select <code>Import</code>.</p>
 
-<h2 id="the-author-and-maintainer-of-the-project">The author and maintainer of the project</h2>
+<h2 id="overlaying-and-viewing-peptides-as-a-table">Overlaying and viewing peptides as a table</h2>
 
-<p>Dmitry Avtonomov, Ph.D. (University of Michigan, Ann Arbor)<br />
-Email: dmitriya@umich.edu</p>
+<p>To display the tabular view right-click the imported file, select <code>View -&gt; Table</code>. The table can be sorted by one or multiple columns. To sort by multiple columns hold <kbd>Shift</kbd> when clicking
+on column headers.</p>
 
-<h2 id="general-inquiries">General inquiries</h2>
+<p>To overlay data on 2D map, select both files simultaneously (the <em>.pep.xml</em> file and the LC/MS file)
+to overlay onto, right-click any of them, there should be an option to <code>Overlay on 2D Map</code> in the context menu.</p>
 
-<p>Alexey Nesvizhskii, Ph.D. (University of Michigan, Ann Arbor)<br />
-Email: nesvi@umich.edu<br />
-<a href="http://www.nesvilab.org">http://www.nesvilab.org</a></p>
+<p>You can now link the Map2D with Table viewer by dragging the link icon
+<img src="http://batmass.github.io/images/getting-started/icon_link.png" alt="Link icon" /> from the toolbar of Map2D to the link icon
+<img src="http://batmass.github.io/images/getting-started/icon_link.png" alt="Link icon" /> in the Table view toolbar. Now double-clicking
+on a row in the table will automatically zoom the Map2D to the corresponding region.</p>
+
+<p>If you also click the sonar-like button in the toolbar (see screenshot below) of 2D Map, you&rsquo;ll get all the MS2 events marked in magenta. For these boxes the width means the actual isolation window, if that information was available in mzML, otherwise it defaults to 1.5 Da. This way you&rsquo;ll readily see which MS2 even led to identifications &ndash; magenta box will be crossing the green box, see screenshots.</p>
+
+<h2 id="example">Example</h2>
+
+<p><img src="http://batmass.github.io/images/peptide-overlay/overlay-peptides-on-map2d-instruciton.png" alt="Overlay peptides instruction" />
+<img src="http://batmass.github.io/images/peptide-overlay/overlay-peptides-overview.png" alt="Overlay peptides overview" /></p>
 
 
 			<aside class="copyright" role="note">
@@ -454,7 +463,7 @@ Email: nesvi@umich.edu<br />
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="http://batmass.github.io/data-access-lib/" title="MSFTBX: Mass-Spec File Toolbox, the data access library">
+      <a href="http://batmass.github.io/tutorial/custom-drawing/" title="Display custom data on 2D map">
         <span class="direction">
           Previous
         </span>
@@ -464,7 +473,7 @@ Email: nesvi@umich.edu<br />
           </div>
           <div class="stretch">
             <div class="title">
-              MSFTBX: Mass-Spec File Toolbox, the data access library
+              Display custom data on 2D map
             </div>
           </div>
         </div>
@@ -474,14 +483,14 @@ Email: nesvi@umich.edu<br />
 
   <div class="next">
   
-      <a href="http://batmass.github.io/tutorial/setting-up-development-environment/" title="Setting up development environment">
+      <a href="http://batmass.github.io/license/" title="License">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Setting up development environment
+              License
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
