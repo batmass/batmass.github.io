@@ -1,59 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://batmass.github.io/</loc>
-    <lastmod>2016-04-14T00:59:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/license/</loc>
-    <lastmod>2016-04-14T00:59:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/tutorial/overlay-peptide-ids-on-map2d/</loc>
-    <lastmod>2016-04-14T00:35:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/tutorial/custom-drawing/</loc>
-    <lastmod>2016-04-14T00:34:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/tutorial/developing-first-plugin/</loc>
-    <lastmod>2016-04-14T00:33:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/tutorial/data-access-layer/</loc>
-    <lastmod>2016-04-14T00:32:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/tutorial/setting-up-development-environment/</loc>
-    <lastmod>2016-04-14T00:31:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/contacts/</loc>
-    <lastmod>2016-04-14T00:20:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://batmass.github.io/data-access-lib/</loc>
-    <lastmod>2016-04-14T00:15:01-04:00</lastmod>
   </url>
   
   <url>
     <loc>http://batmass.github.io/getting-started/</loc>
-    <lastmod>2016-04-14T00:10:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/data-access-lib/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/contacts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tutorial/setting-up-development-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tutorial/developing-first-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tutorial/data-access-layer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tutorial/overlay-peptide-ids-on-map2d/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tutorial/custom-drawing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/license/</loc>
   </url>
   
   <url>
     <loc>http://batmass.github.io/</loc>
-    <lastmod>2016-04-14T00:00:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/contacts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/data-access-lib/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/getting-started/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/license/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://batmass.github.io/tutorial/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
